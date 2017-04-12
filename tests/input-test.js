@@ -170,7 +170,8 @@ describe('Input', () => {
         inputNode.value = 'aaaa';
         input.setCaretPos(4);
         TestUtils.Simulate.change(inputNode);
-        expect(inputNode.value).toEqual('aaaa');
+        console.log(inputNode.value);
+        expect(inputNode.value).toEqual('aaaa ');
         expect(input.getCaretPos()).toEqual(4);
 
         inputNode.value = 'aaaaa';
